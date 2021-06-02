@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "bda905f1-75ad-41d0-be5f-b74120fd1471",
+		"name": "testjpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "create employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"A01\",\r\n    \"name\": \"Giang\",\r\n    \"wage\": 1389900\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/employee/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"employee",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/employee/getlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"employee",
+								"getlist"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
